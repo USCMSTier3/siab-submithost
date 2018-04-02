@@ -15,7 +15,7 @@ In order to deploy a SiaB submit host, the system administrator needs to meet th
 
 ### Whitelist condor shared port in firewall
 In order to get the SiaB pilots connecting to the submit host, a special TCP shared port is used: 9615. The system administrator needs to whitelist this port for this to happen.
-In case the host needs to change this port, this can be done in [config.d/02_gwms_schedds.config](config.d/02_gwms_schedds.config)
+In case the host needs to change this port, this can be done in [config.d/02_gwms_schedds.config](condor/config.d/02_gwms_schedds.config)
 - The following lines can be added to `/etc/sysconfig/iptables` to whitelist this port using iptables:
 ```
 # Allow condor queries on schedd through port 9615
