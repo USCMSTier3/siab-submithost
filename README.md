@@ -4,7 +4,9 @@ This repository includes the condor configuration files needed for any Site-in-a
 
 ## Pre-requisites
 In order to deploy a SiaB submit host, the system administrator needs to meet the following pre-requisites first:
+
 ### Get a Host Certificate for the submit host
+ - Install HTCondor. E.g: Via yum using [HTCondor](https://research.cs.wisc.edu/htcondor/yum) or [OSG](https://opensciencegrid.github.io/docs/common/yum/) repositories
  - Please, use the following [OSG documentation link](https://opensciencegrid.github.io/docs/security/host-certs) in order to get the host certificate for the submit host, if none present.
  - Once a host certificate is available, the DN can be obtained via:
    ```
