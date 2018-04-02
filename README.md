@@ -19,7 +19,7 @@ In case the host needs to change this port, this can be done using the attribute
 - The following lines can be added to `/etc/sysconfig/iptables` to whitelist this port using iptables:
 ```
 # Allow condor queries on schedd through port 9615
--A INPUT -m state --state NEW                                     -p tcp -m tcp --dport 9615 -j ACCEPT
+-A INPUT -m state --state NEW -p tcp -m tcp --dport 9615 -j ACCEPT
 ```
 ## Configuring condor
 Once the pre-requisites have been met, copying `config.d` and doing `service condor restart` on the submit host should make things work. 
