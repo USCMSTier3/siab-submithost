@@ -2,6 +2,19 @@
 
 This repository includes the condor configuration files needed for any Site-in-a-Box (SiaB) submit host to connect to the SiaB collector. 
 
+**Table of Contents**
+
+<!-- MarkdownTOC -->
+
+- [Pre-requisites](#pre-requisites)
+	- [Install HTCondor](#install-htcondor)
+	- [Get a Host Certificate for the submit host](#get-a-host-certificate-for-the-submit-host)
+	- [Whitelist condor shared port in firewall](#whitelist-condor-shared-port-in-firewall)
+- [Configuring condor](#configuring-condor)
+- [Testing condor setup](#testing-condor-setup)
+
+<!-- /MarkdownTOC -->
+
 ## Pre-requisites
 In order to deploy a SiaB submit host, the system administrator needs to meet the following pre-requisites first:
 
