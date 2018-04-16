@@ -39,7 +39,7 @@ In case the host needs to change this port, this can be done using the attribute
 -A INPUT -m state --state NEW -p tcp -m tcp --dport 9615 -j ACCEPT
 ```
 ## Configuring condor
-Once the pre-requisites have been met, copying `config.d` and doing `service condor restart` on the submit host should make things work. 
+Once the pre-requisites have been met, copying `config.d`, changing [this line](https://github.com/USCMSTier3/siab-submithost/blob/master/condor/config.d/95_submit_tweaks.config#L2) and doing `service condor restart` on the submit host should make things work. 
 
 ## Testing condor setup
 - To check if the collector is seeing the submit host, you can type the following from the submit host:
